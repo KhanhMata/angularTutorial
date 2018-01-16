@@ -10,6 +10,9 @@ import { MessagesComponent } from './messages/messages.component';
 import { MessageService } from './message.service';
 import { AppRoutingModule } from './/app-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { TeamsComponent } from './teams/teams.component';
+import { TeamDetailComponent } from './team-detail/team-detail.component';
+import { TeamService } from './team.service';
 
 
 @NgModule({
@@ -18,14 +21,16 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     HeroesComponent,
     HeroDetailComponent,
     MessagesComponent,
-    DashboardComponent
+    DashboardComponent,
+    TeamsComponent,
+    TeamDetailComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     AppRoutingModule
   ],
-  providers: [HeroService, MessageService],
+  providers: [HeroService, MessageService, TeamService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
