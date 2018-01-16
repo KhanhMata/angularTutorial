@@ -1,0 +1,9 @@
+<h2>Team List:</h2>
+<ul class="teams">
+  <li *ngFor = "let team of teams">
+    <a>
+      <span class="badge">{{ team.id }}</span>
+      {{ team.name }}
+    </a>
+  </li>
+</ul>
